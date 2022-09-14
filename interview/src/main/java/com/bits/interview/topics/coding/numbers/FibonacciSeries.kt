@@ -1,4 +1,4 @@
-package com.bits.interview.topics.numbers
+package com.bits.interview.topics.coding.numbers
 
 import com.bits.interview.utils.printGap
 import com.bits.interview.utils.printInput
@@ -10,7 +10,7 @@ fun fibonacciSeries(){
     val output = "0, 1, 1, 2, 3"
 
     printTitle("FIBONACCI SERIES")
-    fibonacciSeries(7)
+    fibonacciSeries(5)
     printGap()
 }
 

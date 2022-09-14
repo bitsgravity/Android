@@ -1,4 +1,4 @@
-package com.bits.interview.topics.strings
+package com.bits.interview.topics.coding.strings
 
 import com.bits.interview.utils.printGap
 import com.bits.interview.utils.printInput

@@ -1,4 +1,4 @@
-package com.bits.interview.topics.numbers
+package com.bits.interview.topics.coding.numbers
 
 import com.bits.interview.utils.printGap
 import com.bits.interview.utils.printInput

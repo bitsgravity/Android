@@ -7,7 +7,7 @@ fun printTitle(title : String){
         titleWrapLine.append("-")
 
     println("\n$titleWrapLine")
-    println("$title")
+    println(" $title")
     println("$titleWrapLine")
 }
 
