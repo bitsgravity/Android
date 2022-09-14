@@ -22,7 +22,6 @@ fun primeNumber(number: Int) : Boolean {
     for (i in 2 until squareRoot.toInt()+1){
         if (number%i == 0){
             printOutput("$number is not a prime number")
-            printGap()
             return false
         }
     }

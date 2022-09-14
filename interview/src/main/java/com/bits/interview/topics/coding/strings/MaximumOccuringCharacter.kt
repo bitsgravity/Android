@@ -15,7 +15,7 @@ fun maximumOccuringCharacter(input : String){
     printInput(input)
 
     var maxOccuringCharacter : Char? = null
-    var maxOccuringCharacterCount : Int = 0
+    var maxOccuringCharacterCount = 0
 
     val map : HashMap<Char,Int> = HashMap()
 
@@ -33,4 +33,8 @@ fun maximumOccuringCharacter(input : String){
     }
 
     printOutput("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
+}
+
+fun countOccurrences(input: String, ch: Char): Int {
+    return input.filter { it == ch }.count()
 }
