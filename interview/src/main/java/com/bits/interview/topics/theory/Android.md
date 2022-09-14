@@ -1,14 +1,5 @@
-Inline
-Non line
-Cross inline
+#Android
 
-Diff between let and run
-
-Coroutine.launch and coruytine.async
-
-Mediatorlive data
-
-Android
 Android is an open source and Linux-based Operating System for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies.
 
 Android offers a unified approach to application development for mobile devices which means developers need only develop for Android, and their applications should be able to run on different devices powered by Android.
