@@ -1,5 +1,6 @@
 # TOPICS
 
+
 ## CODING
 
 ### Numbers
@@ -13,6 +14,10 @@
 - [Palindrome Sting](src/main/java/com/bits/topics/store/coding/strings/PalindromeString.kt)
 - [Reverse Words](src/main/java/com/bits/topics/store/coding/strings/ReverseWords.kt)
 - [Special Formats](src/main/java/com/bits/topics/store/coding/strings/SpecialFormats.kt)
+
+### Arrays
+- [Array Rotation](src/main/java/com/bits/topics/store/coding/arrays/Rotation.kt)
+
 
 ## THEORY
 
