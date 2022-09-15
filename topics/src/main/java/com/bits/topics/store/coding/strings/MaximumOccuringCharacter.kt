@@ -1,18 +1,18 @@
 package com.bits.topics.store.coding.strings
 
-import com.bits.topics.utils.printGap
-import com.bits.topics.utils.printInput
-import com.bits.topics.utils.printOutput
-import com.bits.topics.utils.printTitle
+import com.bits.topics.utils.gap
+import com.bits.topics.utils.input
+import com.bits.topics.utils.output
+import com.bits.topics.utils.title
 
 fun maximumOccuringCharacter(){
-    printTitle("MAXIMUM OCCURING CHARACTER")
+    title("MAXIMUM OCCURING CHARACTER")
     maximumOccuringCharacter("Malayalam is a language !")
-    printGap()
+    gap()
 }
 
 fun maximumOccuringCharacter(input : String){
-    printInput(input)
+    input(input)
 
     var maxOccuringCharacter : Char? = null
     var maxOccuringCharacterCount = 0
@@ -32,7 +32,7 @@ fun maximumOccuringCharacter(input : String){
         }
     }
 
-    printOutput("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
+    output("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
 }
 
 fun countOccurrences(input: String, ch: Char): Int {

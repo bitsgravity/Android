@@ -1,18 +1,18 @@
 package com.bits.topics.store.coding.strings
 
-import com.bits.topics.utils.printGap
-import com.bits.topics.utils.printInput
-import com.bits.topics.utils.printOutput
-import com.bits.topics.utils.printTitle
+import com.bits.topics.utils.gap
+import com.bits.topics.utils.input
+import com.bits.topics.utils.output
+import com.bits.topics.utils.title
 
 fun reverseWords(){
-    printTitle("REVERSE WORDS")
+    title("REVERSE WORDS")
     reverseWords("This is a sample string to reverse")
-    printGap()
+    gap()
 }
 
 fun reverseWords(input : String){
-    printInput(input)
+    input(input)
 
     val words = input.split(" ")
     val reversedSentence = StringBuilder()
@@ -21,5 +21,5 @@ fun reverseWords(input : String){
         reversedSentence.append(it).append(" ")
     }
 
-    printOutput(reversedSentence.toString())
+    output(reversedSentence.toString())
 }

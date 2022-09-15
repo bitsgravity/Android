@@ -6,6 +6,7 @@
 - [Fibonacci Series](src/main/java/com/bits/topics/store/coding/numbers/FibonacciSeries.kt)
 - [Palindrome Number](src/main/java/com/bits/topics/store/coding/numbers/PalindromeNumber.kt)
 - [Prime Number](src/main/java/com/bits/topics/store/coding/numbers/PrimeNumber.kt)
+- [Amstrong Number](src/main/java/com/bits/topics/store/coding/numbers/AmstrongNumber.kt)
 
 ### Strings
 - [Maximum Occuring Character](src/main/java/com/bits/topics/store/coding/strings/MaximumOccuringCharacter.kt)

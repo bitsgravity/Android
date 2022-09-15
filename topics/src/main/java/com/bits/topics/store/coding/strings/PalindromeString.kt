@@ -1,21 +1,18 @@
 package com.bits.topics.store.coding.strings
 
-import com.bits.topics.utils.printGap
-import com.bits.topics.utils.printInput
-import com.bits.topics.utils.printOutput
-import com.bits.topics.utils.printTitle
+import com.bits.topics.utils.gap
+import com.bits.topics.utils.input
+import com.bits.topics.utils.output
+import com.bits.topics.utils.title
 
 fun palindromeString(){
-    val input = "malayalam"
-    val output = "Is malayalam a Palindrome String? : true"
-
-    printTitle("PALINDROME STRING")
+    title("PALINDROME STRING")
     palindromeString("malayalam")
-    printGap()
+    gap()
 }
 
 fun palindromeString(input: String): Boolean {
-    printInput(input)
+    input(input)
 
     var result = true
     val length = input.length
@@ -26,7 +23,7 @@ fun palindromeString(input: String): Boolean {
         }
     }
 
-    printOutput(result.toString())
+    output(result.toString())
 
     return result
 }

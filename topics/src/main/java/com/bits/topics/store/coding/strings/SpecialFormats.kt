@@ -1,22 +1,19 @@
 package com.bits.topics.store.coding.strings
 
-import com.bits.topics.utils.printGap
-import com.bits.topics.utils.printInput
-import com.bits.topics.utils.printOutput
-import com.bits.topics.utils.printTitle
+import com.bits.topics.utils.gap
+import com.bits.topics.utils.input
+import com.bits.topics.utils.output
+import com.bits.topics.utils.title
 import java.lang.StringBuilder
 
 fun specialFormats(){
-    val input = "aaaHHHyyyH"
-    val output = "a3H3y3H1"
-
-    printTitle("SPECIAL FORMATS")
+    title("SPECIAL FORMATS")
     specialFormats1("aaaHHHyyyH")
-    printGap()
+    gap()
 }
 
 fun specialFormats1(input: String){
-    printInput(input)
+    input(input)
 
     val output = StringBuilder()
     val inputLength = input.length
@@ -37,5 +34,5 @@ fun specialFormats1(input: String){
         }
     }
 
-    printOutput(output.toString())
+    output(output.toString())
 }

@@ -1,26 +1,23 @@
 package com.bits.topics.store.coding.numbers
 
-import com.bits.topics.utils.printGap
-import com.bits.topics.utils.printInput
-import com.bits.topics.utils.printOutput
-import com.bits.topics.utils.printTitle
+import com.bits.topics.utils.gap
+import com.bits.topics.utils.input
+import com.bits.topics.utils.output
+import com.bits.topics.utils.title
 
 fun palindromeNumber(){
-    val input = 525
-    val output = "525 is a palindrome Number"
-
-    printTitle("PALINDROME NUMBER")
+    title("PALINDROME NUMBER")
     palindromeNumber(525)
-    printGap()
+    gap()
 }
 
 fun palindromeNumber(number: Int){
-    printInput(number.toString())
+    input(number.toString())
 
     if (number == reverseNumber2(number)) {
-        printOutput("$number is a Palindrome Number")
+        output("$number is a Palindrome Number")
     } else {
-        printOutput("$number is not Palindrome Number")
+        output("$number is not Palindrome Number")
     }
 }
 

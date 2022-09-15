@@ -1,6 +1,6 @@
 package com.bits.topics.utils
 
-fun printTitle(title : String){
+fun title(title : String){
     val titleWrapLine = StringBuilder()
 
     for (i in 1 until title.length+3)
@@ -11,16 +11,24 @@ fun printTitle(title : String){
     println("$titleWrapLine")
 }
 
-fun printInput(input : String){
+fun input(input : String){
     print("Input  : $input")
 }
 
-fun printOutput(output : String){
+fun output(output : String){
     print("\nOutput : $output")
 }
 
-fun printGap(){
+fun gap(){
     print("\n")
+}
+
+fun topDivider(){
+    print(Divider.DIVIDER_TOP)
+}
+
+fun bottomDivider(){
+    print(Divider.DIVIDER_BOTTOM)
 }
 
 object Divider {
