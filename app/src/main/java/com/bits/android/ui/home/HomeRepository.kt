@@ -5,7 +5,7 @@ import com.bits.android.root.network.*
 import com.bits.android.root.network.base.BaseRequest
 import com.bits.android.root.network.base.BaseResponse
 import com.bits.android.root.preference.PreferenceProvider
-import com.bits.support.location.Location
+import com.bits.support.temp.location.Location
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

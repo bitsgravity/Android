@@ -1,4 +1,4 @@
-package com.bits.support.utility
+package com.bits.support.temp.utility
 
 import android.content.Context
 import android.content.pm.PackageManager

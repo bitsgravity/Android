@@ -1,4 +1,4 @@
-package com.bits.support
+package com.bits.support.temp
 
 import android.app.Activity
 import android.content.Context
@@ -17,8 +17,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.FileProvider
 import androidx.fragment.app.FragmentActivity
-import com.bits.support.views.hide
-import com.bits.support.views.show
+import com.bits.support.temp.views.hide
+import com.bits.support.temp.views.show
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream

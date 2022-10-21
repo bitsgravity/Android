@@ -1,4 +1,4 @@
-package com.bits.support.alert
+package com.bits.support.temp.alert
 
 //import android.app.AlertDialog
 //import android.content.Context
@@ -11,8 +11,8 @@ package com.bits.support.alert
 //import androidx.fragment.app.FragmentActivity
 //import com.bits.support.R
 //import com.bits.support.sync.toggleVisibility
-//import com.bits.support.views.hide
-//import com.bits.support.views.show
+//import com.bits.support.temp.views.hide
+//import com.bits.support.temp.views.show
 //import java.io.IOException
 //
 //fun FragmentActivity.noInternetAlert(callback: (Alert) -> Unit){

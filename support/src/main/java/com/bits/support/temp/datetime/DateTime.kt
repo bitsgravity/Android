@@ -1,4 +1,4 @@
-package com.bits.support.datetime
+package com.bits.support.temp.datetime
 
 import android.annotation.SuppressLint
 import android.os.CountDownTimer
@@ -16,7 +16,7 @@ const val MONTH_NAME = "MMM"
 const val MONTH_NUMBER = "MM"
 const val YEAR_NUMBER = "yyyy"
 
-const val FORMAT_BASIC = "$DAY_NUMBER/$MONTH_NAME/$YEAR_NUMBER hh:mm:ss"
+const val FORMAT_BASIC = "${DAY_NUMBER}/${MONTH_NAME}/${YEAR_NUMBER} hh:mm:ss"
 
 enum class DateTimeValues{
     TIME,

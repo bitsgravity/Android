@@ -3,7 +3,7 @@ package com.bits.android.root.preference
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
-import com.bits.support.location.Location
+import com.bits.support.temp.location.Location
 
 private const val KEY_LATITUDE = "latitude"
 private const val KEY_LONGITUDE = "longitude"
