@@ -20,7 +20,7 @@ class LocationListener(var context : Context, var callback : (Location) -> Unit)
         val addresses: List<Address>
         try {
             addresses = gcd.getFromLocation(loc.getLatitude(),
-                    loc.getLongitude(), 1)
+                loc.getLongitude(), 1) as List<Address>
             if (addresses.isNotEmpty()) {
                 city = addresses[0].locality
                 district = addresses[0].subAdminArea

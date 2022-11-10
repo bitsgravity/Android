@@ -10,3 +10,7 @@ object LOG {
 fun log(message : String){
     Log.d(TAG,message)
 }
+
+fun logError(message: String){
+    Log.e(TAG,message)
+}

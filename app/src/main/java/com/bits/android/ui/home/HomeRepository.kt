@@ -1,46 +1,96 @@
 package com.bits.android.ui.home
 
-import com.bits.android.root.logger.log
-import com.bits.android.root.network.*
-import com.bits.android.root.network.base.BaseRequest
-import com.bits.android.root.network.base.BaseResponse
-import com.bits.android.root.preference.PreferenceProvider
-import com.bits.support.temp.location.Location
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import com.bits.android.data.local.database.AppDatabase
+import com.bits.android.data.local.database.entities.Person
+import com.bits.android.data.local.preference.AppPreference
+import com.bits.template.data.network.Api
+import com.bits.android.data.network.models.collection.persons.PersonsRequest
+import com.bits.android.data.network.utils.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.lang.Exception
+import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class HomeRepository(private val api: Api, private val preferenceProvider: PreferenceProvider) : NetworkCall() {
-    
-    fun requestBase(baseRequest: BaseRequest, networkCallListener: NetworkCallListener?, callback : (BaseResponse?) -> Unit){
+//private val MINIMUM_INTERVAL = 6
+
+class HomeRepository @Inject constructor(private val api: Api, private val appPreference: AppPreference, private val appDatabase: AppDatabase) : NetworkCall() {
+
+    private val persons = MutableLiveData<List<Person>>()
+
+    init {
+        persons.observeForever {
+            insertPersons(it)
+        }
+    }
+
+    private fun insertPersons(persons: List<Person>) {
+        CoroutineScope(Dispatchers.IO).launch {
+//            appPreference.setLastSavedAt(LocalDateTime.now().toString())
+            appDatabase.getPersonsDao().insertPersons(persons)
+        }
+    }
+
+    fun updatePerson(person: Person) {
+        CoroutineScope(Dispatchers.IO).launch {
+            appDatabase.getPersonsDao().updatePerson(person)
+        }
+    }
+
+//    private fun isFetchNeeded(savedAt: LocalDateTime): Boolean {
+//        val lastSavedAt = appPreference.getLastSavedAt()
+//
+//        lastSavedAt == null || isFetchNeeded(LocalDateTime.parse(lastSavedAt))
+//
+//        return appPreference.isFetchNeeded()
+//    }
+
+    fun requestPersons(request: PersonsRequest, networkCallListener: NetworkCallListener?, callback: (List<Person>) -> Unit) {
         CoroutineScope(Dispatchers.Main).launch {
-            try {
-                networkCallListener?.onNetworkCallStarted(CallInfo(callCode = CallCode.ANY))
+            if (isFetchNeeded()) {
+                try {
+                    networkCallListener?.onNetworkCallStarted(CallInfo(callCode = request.callCode))
 
-//                val baseResponse = apiRequest { api.base(baseRequest.token!!,baseRequest.data!!)}
-//                callback(baseResponse)
+                    val personsResponse = apiRequest { api.persons(
+                        request.results.toString()
+                    )}
 
-                networkCallListener?.onNetworkCallSuccess(CallInfo(callCode = CallCode.ANY))
-            } catch (e: ApiException) {
-                networkCallListener?.onNetworkCallFailure(CallInfo(callCode = CallCode.ANY,exception = e))
-            } catch (e: NoInternetException) {
-                networkCallListener?.onNetworkCallFailure(CallInfo(callCode = CallCode.ANY,exception = e))
-            } catch (e : Exception){
-                log("Api | Exception | $e")
+                    personsResponse.results?.let {
+                        persons.postValue(it)
+                    }
+
+                    networkCallListener?.onNetworkCallSuccess(CallInfo(callCode = request.callCode))
+
+                } catch (e: ApiException) {
+                    networkCallListener?.onNetworkCallFailure(CallInfo(callCode = request.callCode,exception = e))
+                } catch (e: NoInternetException) {
+                    networkCallListener?.onNetworkCallFailure(CallInfo(callCode = request.callCode,exception = e))
+                } catch (e : Exception){
+                    networkCallListener?.onNetworkCallFailure(CallInfo(callCode = request.callCode,exception = e))
+                }
+            } else {
+                networkCallListener?.onNetworkCallFailure(CallInfo(callCode = request.callCode))
+            }
+
+            getPersons().observeForever {
+                callback(it.reversed())
             }
         }
     }
 
-    fun setLocation(location: Location){
-        preferenceProvider.setLocation(location)
+    private suspend fun getPersons() : LiveData<List<Person>>{
+        return withContext(Dispatchers.IO){
+            appDatabase.getPersonsDao().getPersons()
+        }
     }
 
-    fun getLocation() : Location {
-        return preferenceProvider.getLocation()
+    private fun isFetchNeeded(): Boolean {
+        return appPreference.isFetchNeeded()
     }
 
-    fun clearLocation() {
-        preferenceProvider.clearLocation()
+    fun setIsFetchNeeded(isNeeded: Boolean) {
+        appPreference.setIsFetchNeeded(isNeeded)
     }
 }

@@ -19,8 +19,8 @@ class LocationListener(var context : Context, var callback : (Location) -> Unit)
         val gcd = Geocoder(context, Locale.getDefault())
         val addresses: List<Address>
         try {
-            addresses = gcd.getFromLocation(loc.getLatitude(),
-                    loc.getLongitude(), 1)
+            addresses = gcd.getFromLocation(loc.latitude,
+                loc.longitude, 1)!!
             if (addresses.isNotEmpty()) {
                 city = addresses[0].locality
                 district = addresses[0].subAdminArea
