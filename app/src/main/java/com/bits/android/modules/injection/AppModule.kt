@@ -1,10 +1,10 @@
-package com.bits.android.di
+package com.bits.android.modules.injection
 
 import android.content.Context
 import com.bits.android.data.local.database.AppDatabase
 import com.bits.android.data.local.database.daos.PersonsDao
 import com.bits.android.data.network.utils.NetworkInterceptor
-import com.bits.template.data.network.Api
+import com.bits.android.data.network.api.Api
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

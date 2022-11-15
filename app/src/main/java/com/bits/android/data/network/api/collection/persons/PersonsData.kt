@@ -1,7 +1,7 @@
-package com.bits.android.data.network.models.collection.persons
+package com.bits.android.data.network.api.collection.persons
 
 import com.bits.android.data.local.database.entities.Person
-import com.bits.android.data.network.models.base.BaseData
+import com.bits.android.data.network.api.base.BaseData
 
 class PersonsData(var matchesResponse: PersonsResponse) : BaseData(matchesResponse){
 

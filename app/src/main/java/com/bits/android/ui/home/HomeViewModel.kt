@@ -4,9 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.bits.android.data.local.database.entities.Person
-import com.bits.android.data.network.models.collection.persons.PersonsRequest
-import com.bits.android.data.network.utils.NetworkCallListener
-import com.bits.android.ui.home.HomeRepository
+import com.bits.android.data.network.api.collection.persons.PersonsRequest
+import com.bits.android.data.network.NetworkCallListener
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

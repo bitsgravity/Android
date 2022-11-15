@@ -1,7 +1,7 @@
-package com.bits.template.data.network
+package com.bits.android.data.network.api
 
-import com.bits.android.data.network.utils.Network.BASE_URL
-import com.bits.android.data.network.models.collection.persons.PersonsResponse
+import com.bits.android.data.network.Network.BASE_URL
+import com.bits.android.data.network.api.collection.persons.PersonsResponse
 import com.bits.android.data.network.utils.NetworkInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

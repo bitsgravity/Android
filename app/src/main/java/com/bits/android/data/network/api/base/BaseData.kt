@@ -1,4 +1,4 @@
-package com.bits.android.data.network.models.base
+package com.bits.android.data.network.api.base
 
 open class BaseData(var baseResponse: BaseResponse){
     fun isOk(): Boolean {

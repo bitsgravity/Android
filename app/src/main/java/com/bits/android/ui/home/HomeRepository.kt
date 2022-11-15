@@ -5,8 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import com.bits.android.data.local.database.AppDatabase
 import com.bits.android.data.local.database.entities.Person
 import com.bits.android.data.local.preference.AppPreference
-import com.bits.template.data.network.Api
-import com.bits.android.data.network.models.collection.persons.PersonsRequest
+import com.bits.android.data.network.ApiException
+import com.bits.android.data.network.CallInfo
+import com.bits.android.data.network.NetworkCallListener
+import com.bits.android.data.network.NoInternetException
+import com.bits.android.data.network.api.Api
+import com.bits.android.data.network.api.collection.persons.PersonsRequest
 import com.bits.android.data.network.utils.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

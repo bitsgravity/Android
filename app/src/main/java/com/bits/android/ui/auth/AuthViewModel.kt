@@ -1,8 +1,7 @@
 package com.bits.android.ui.auth
 
 import androidx.lifecycle.ViewModel
-import com.bits.android.data.network.utils.NetworkCallListener
-import com.bits.android.ui.auth.AuthRepository
+import com.bits.android.data.network.NetworkCallListener
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

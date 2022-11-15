@@ -1,5 +1,6 @@
 package com.bits.android.data.network.utils
 
+import com.bits.android.data.network.ApiException
 import com.bits.support.logger.log
 import org.json.JSONException
 import org.json.JSONObject

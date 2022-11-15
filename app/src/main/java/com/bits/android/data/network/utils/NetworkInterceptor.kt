@@ -3,8 +3,8 @@ package com.bits.android.data.network.utils
 import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.bits.android.data.network.utils.NoInternetException
-import com.bits.android.data.network.utils.isInternetAvailable
+import com.bits.android.data.network.NoInternetException
+import com.bits.android.data.network.isInternetAvailable
 import dagger.hilt.android.qualifiers.ApplicationContext
 import okhttp3.Interceptor
 import okhttp3.Response

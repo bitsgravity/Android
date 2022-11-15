@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bits.android.R
 import com.bits.android.data.local.database.entities.Person
-import com.bits.android.data.network.utils.CallInfo
-import com.bits.android.data.network.utils.NetworkCallListener
-import com.bits.android.data.network.utils.NoInternetException
+import com.bits.android.data.network.CallInfo
+import com.bits.android.data.network.NetworkCallListener
+import com.bits.android.data.network.NoInternetException
 import com.bits.android.databinding.ActivityPersonsBinding
 import com.bits.android.utils.startPhotoActivity
 import com.bits.support.alerts.AlertCallbacks
