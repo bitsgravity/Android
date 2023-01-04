@@ -1,4 +1,4 @@
-package com.bits.topics.utils
+package com.bits.topics.coding.utils
 
 fun title(title : String){
     val titleWrapLine = StringBuilder()
@@ -11,12 +11,20 @@ fun title(title : String){
     println("$titleWrapLine")
 }
 
+fun input(){
+    print("Input :")
+}
+
 fun input(input : String){
     print("Input  : $input")
 }
 
 fun output(output : String){
     print("\nOutput : $output")
+}
+
+fun output(){
+    print("\nOutput :")
 }
 
 fun gap(){

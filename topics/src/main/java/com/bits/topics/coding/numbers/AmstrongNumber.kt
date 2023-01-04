@@ -1,12 +1,6 @@
-package com.bits.topics.store.coding.numbers
+package com.bits.topics.coding.numbers
 
-import com.bits.topics.utils.*
-
-fun main(){
-    topDivider()
-    amstrongNumber()
-    bottomDivider()
-}
+import com.bits.topics.coding.utils.*
 
 fun amstrongNumber(){
     title("AMSTRONG NUMBER")
@@ -23,7 +17,7 @@ fun amstrongNumber(input : Int){
 
     while (number > 0){
         reminder = number % 10
-        result = result + Math.pow(reminder.toDouble(),3.0).toInt()
+        result = result + reminder * reminder * reminder
         number = number/10
     }
 

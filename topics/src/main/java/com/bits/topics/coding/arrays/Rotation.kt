@@ -1,13 +1,11 @@
-package com.bits.topics.store.coding.arrays
+package com.bits.topics.coding.arrays
 
-import com.bits.topics.utils.*
+import com.bits.topics.coding.utils.*
 import java.util.*
 
-fun main(){
-    topDivider()
+fun arrayRotation(){
     rotateLeft()
     rotateRight()
-    bottomDivider()
 }
 
 fun rotateLeft() {

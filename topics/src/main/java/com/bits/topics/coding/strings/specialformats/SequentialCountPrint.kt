@@ -1,18 +1,25 @@
-package com.bits.topics.store.coding.strings
+package com.bits.topics.coding.strings.specialformats
 
-import com.bits.topics.utils.gap
-import com.bits.topics.utils.input
-import com.bits.topics.utils.output
-import com.bits.topics.utils.title
+import com.bits.topics.coding.utils.gap
+import com.bits.topics.coding.utils.input
+import com.bits.topics.coding.utils.output
+import com.bits.topics.coding.utils.title
 import java.lang.StringBuilder
 
-fun specialFormats(){
-    title("SPECIAL FORMATS")
-    specialFormats1("aaaHHHyyyH")
+/* ------------------------------------------------- /
+    Sequential Count Print
+
+    INPUT  : aaHHHyye
+    OUTPUT : a2H3y2e1
+/ --------------------------------------------------- */
+
+fun sequentialCountPrint(){
+    title("SPECIAL FORMATS : SEQUENTIAL COUNT PRINT")
+    sequentialCountPrint("aaHHHyye")
     gap()
 }
 
-fun specialFormats1(input: String){
+fun sequentialCountPrint(input: String){
     input(input)
 
     val output = StringBuilder()

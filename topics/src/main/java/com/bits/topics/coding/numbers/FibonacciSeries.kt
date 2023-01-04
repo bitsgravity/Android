@@ -1,6 +1,6 @@
-package com.bits.topics.store.coding.numbers
+package com.bits.topics.coding.numbers
 
-import com.bits.topics.utils.*
+import com.bits.topics.coding.utils.*
 
 fun main() {
     topDivider()

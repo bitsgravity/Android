@@ -1,9 +1,9 @@
-package com.bits.topics.store.coding.numbers
+package com.bits.topics.coding.numbers
 
-import com.bits.topics.utils.gap
-import com.bits.topics.utils.input
-import com.bits.topics.utils.output
-import com.bits.topics.utils.title
+import com.bits.topics.coding.utils.gap
+import com.bits.topics.coding.utils.input
+import com.bits.topics.coding.utils.output
+import com.bits.topics.coding.utils.title
 
 fun palindromeNumber(){
     title("PALINDROME NUMBER")
