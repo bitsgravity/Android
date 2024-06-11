@@ -16,3 +16,4 @@ rootProject.name = "Android"
 include ':app'
 include ':support'
 include ':topics'
+include ':leetcode'
