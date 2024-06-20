@@ -1,4 +1,4 @@
-package com.example.leetcode.basics
+package com.bits.leetcode.solutions
 
 fun main(){
     val input = intArrayOf(2,5,5,11)
