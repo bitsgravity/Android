@@ -1,20 +1,11 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.utils.gap
-import com.bitsgravity.program.collection.utils.input
-import com.bitsgravity.program.collection.utils.output
-import com.bitsgravity.program.collection.utils.title
-import java.util.*
+import com.bitsgravity.program.collection.trash.input
+import com.bitsgravity.program.collection.trash.output
+import java.util.Arrays
 
-fun arrayRotation(){
-    rotateLeft()
-    rotateRight()
-}
-
-fun rotateLeft() {
-    title("ARRAY ROTATION LEFT")
+fun main() {
     rotateLeft(arrayOf(25,17,14,11,7),2)
-    gap()
 }
 
 fun rotateLeft(input : Array<Int>, offset : Int) : Array<Int> {
@@ -37,12 +28,6 @@ fun rotateLeft(input : Array<Int>, offset : Int) : Array<Int> {
     output("The rotated array is ${result.contentToString()}")
 
     return result
-}
-
-fun rotateRight() {
-    title("ARRAY ROTATION RIGHT")
-    rotateRight(arrayOf(7,11,14,17,25),2)
-    gap()
 }
 
 fun rotateRight(input : Array<Int>, offset : Int){

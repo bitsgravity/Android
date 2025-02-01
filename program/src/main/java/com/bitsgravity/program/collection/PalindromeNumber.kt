@@ -1,19 +1,12 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.utils.gap
-import com.bitsgravity.program.collection.utils.input
-import com.bitsgravity.program.collection.utils.output
-import com.bitsgravity.program.collection.utils.title
+import com.bitsgravity.program.collection.trash.output
 
-fun palindromeNumber(){
-    title("PALINDROME NUMBER")
+fun main(){
     palindromeNumber(525)
-    gap()
 }
 
 fun palindromeNumber(number: Int){
-    input(number.toString())
-
     if (number == reverseNumber2(number)) {
         output("$number is a Palindrome Number")
     } else {

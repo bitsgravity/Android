@@ -1,4 +1,4 @@
-package com.bitsgravity.program.collection.utils
+package com.bitsgravity.program.collection.trash
 
 fun title(title : String){
     val titleWrapLine = StringBuilder()

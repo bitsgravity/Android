@@ -1,11 +1,5 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.utils.gap
-import com.bitsgravity.program.collection.utils.input
-import com.bitsgravity.program.collection.utils.output
-import com.bitsgravity.program.collection.utils.title
-import java.lang.StringBuilder
-
 /* ------------------------------------------------- /
     Sequential Count Print
 
@@ -13,15 +7,11 @@ import java.lang.StringBuilder
     OUTPUT : a2H3y2e1
 / --------------------------------------------------- */
 
-fun sequentialCountPrint(){
-    title("SPECIAL FORMATS : SEQUENTIAL COUNT PRINT")
-    sequentialCountPrint("aaHHHyye")
-    gap()
+fun main(){
+    sequentialCharacterCount("aaHHHyye")
 }
 
-fun sequentialCountPrint(input: String){
-    input(input)
-
+fun sequentialCharacterCount(input: String){
     val output = StringBuilder()
     val inputLength = input.length
 
@@ -41,5 +31,5 @@ fun sequentialCountPrint(input: String){
         }
     }
 
-    output(output.toString())
+    println(output.toString())
 }

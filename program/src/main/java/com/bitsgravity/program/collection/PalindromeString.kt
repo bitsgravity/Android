@@ -1,18 +1,15 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.utils.gap
-import com.bitsgravity.program.collection.utils.input
-import com.bitsgravity.program.collection.utils.output
-import com.bitsgravity.program.collection.utils.title
+import com.bitsgravity.program.collection.trash.gap
+import com.bitsgravity.program.collection.trash.input
+import com.bitsgravity.program.collection.trash.output
+import com.bitsgravity.program.collection.trash.title
 
-fun palindromeString(){
-    title("PALINDROME STRING")
+fun main(){
     palindromeString("malayalam")
-    gap()
 }
 
 fun palindromeString(input: String): Boolean {
-    input(input)
 
     var result = true
     val length = input.length
@@ -23,7 +20,7 @@ fun palindromeString(input: String): Boolean {
         }
     }
 
-    output(result.toString())
+    println(result.toString())
 
     return result
 }

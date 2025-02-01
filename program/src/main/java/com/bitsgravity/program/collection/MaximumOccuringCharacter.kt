@@ -1,18 +1,10 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.utils.gap
-import com.bitsgravity.program.collection.utils.input
-import com.bitsgravity.program.collection.utils.output
-import com.bitsgravity.program.collection.utils.title
-
-fun maximumOccuringCharacter(){
-    title("MAXIMUM OCCURING CHARACTER")
+fun main(){
     maximumOccuringCharacter("Malayalam is a language !")
-    gap()
 }
 
 fun maximumOccuringCharacter(input : String){
-    input(input)
 
     var maxOccuringCharacter : Char? = null
     var maxOccuringCharacterCount = 0
@@ -32,9 +24,5 @@ fun maximumOccuringCharacter(input : String){
         }
     }
 
-    output("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
-}
-
-fun countOccurrences(input: String, ch: Char): Int {
-    return input.filter { it == ch }.count()
+    println("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
 }
