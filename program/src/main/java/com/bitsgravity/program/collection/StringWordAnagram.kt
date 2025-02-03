@@ -10,14 +10,12 @@ fun main() {
     println("The given strings are Anagram : ${checkAnagram1(input1,input2)}")
 }
 
-//Using HashMap [Traditional]
-fun checkAnagram1(input1: String, input2: String): Boolean {
-    if (input1.length != input2.length) return false  // Length mismatch check
 
+fun checkAnagram1(input1: String, input2: String): Boolean { //Using HashMap [Traditional]
+    if (input1.length != input2.length) return false  // Length mismatch check
     val map = HashMap<Char, Int>()
 
-    // Count occurrences in input1 (without getOrDefault)
-    for (char in input1) {
+    for (char in input1) { // Count occurrences in input1 (without getOrDefault)
         if (map.containsKey(char)) {
             map[char] = map[char]!! + 1
         } else {
@@ -25,8 +23,7 @@ fun checkAnagram1(input1: String, input2: String): Boolean {
         }
     }
 
-    // Decrease count for input2
-    for (char in input2) {
+    for (char in input2) { // Decrease count for input2
         if (!map.containsKey(char) || map[char] == 0) {
             return false
         }
@@ -36,13 +33,14 @@ fun checkAnagram1(input1: String, input2: String): Boolean {
     return true
 }
 
-//Using Sorting [Traditional]
-fun checkAnagram2(input1: String, input2: String): Boolean {
-    return input1.length == input2.length && input1.toCharArray().sorted() == input2.toCharArray().sorted()
+
+fun checkAnagram2(input1: String, input2: String): Boolean { //Using Sorting [Traditional]
+    return input1.length == input2.length
+            && input1.toCharArray().sorted() == input2.toCharArray().sorted()
 }
 
-//Using Grouping To Map [Kotlin Specific]
-fun checkAnagram3(input1: String, input2: String): Boolean {
+
+fun checkAnagram3(input1: String, input2: String): Boolean { //Using Grouping To Map [Kotlin Specific]
     return input1.groupingBy { it }.eachCount() == input2.groupingBy { it }.eachCount()
 }
 
