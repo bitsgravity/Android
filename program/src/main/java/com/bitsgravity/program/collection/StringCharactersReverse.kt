@@ -1,7 +1,7 @@
 package com.bitsgravity.program.collection
 
 /***********************************************************************************
-                                Kotlin Playground
+                                Kotlin Play Ground
  ***********************************************************************************/
 
 fun main(){
@@ -41,22 +41,26 @@ fun reverseString4(input : String) : String { //Using reversed() [Kotlin Specifi
 
 
 /***********************************************************************************
-                                Performance
+                                Theory
  ***********************************************************************************
 
-1. reverseStringTraditionalWithPlusEqualConcat
+How to reverse characters in a string
+
+Below are some of the best approaches,
+
+1. reverseStringUsingPlusEqualOperator [Traditional]
 Time Complexity: O(n), where n is the length of the string.
 Space Complexity: O(n), as we store the reversed string.
 
-2. reverseStringTraditionalWithCharArray
+2. reverseStringUsingCharArray [Traditional]
 Time Complexity: O(n), where n is the length of the string.
 Space Complexity: O(n), as we store the reversed string.
 
-3. reverseStringTraditionalWithStringBuilder
+3. reverseStringUsingStringBuilder [Traditional]
 Time Complexity: O(n), where n is the length of the string.
 Space Complexity: O(n), as StringBuilder still uses the same amount of space to store the final string.
 
-4. reverseStringKotlinSpecificWithReversed
+4. reverseStringUsingReversed [Kotlin]
 Time Complexity: O(n)
 Space Complexity: O(n)
 

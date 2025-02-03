@@ -1,8 +1,5 @@
 package com.bitsgravity.program.collection
 
-import com.bitsgravity.program.collection.trash.input
-import com.bitsgravity.program.collection.trash.output
-
 fun main() {
     fibonacciSeries(5)
 }

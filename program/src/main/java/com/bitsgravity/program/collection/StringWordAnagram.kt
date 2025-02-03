@@ -1,7 +1,7 @@
 package com.bitsgravity.program.collection
 
 /***********************************************************************************
-                            Kotlin Playground
+                            Kotlin Play Ground
  ***********************************************************************************/
 
 fun main() {
@@ -47,25 +47,30 @@ fun checkAnagram3(input1: String, input2: String): Boolean {
 }
 
 /***********************************************************************************
-                                    Performance
+                                    Theory
  ***********************************************************************************
 
-1. checkAnagramTraditionalWithHashMap
+Anagram
+
+What is an Anagram? An anagram is
+
+How to resolve an anagram
+
+Solutions
+
+1. checkAnagramUsingHashMap [Traditional]
 Time Complexity: 𝑂(𝑛)
 Space Complexity: O(1) (since only 26 letters for lowercase English letters)
-Notes :
 Efficient for large input
 
-2. checkAnagramTraditionalWithSorting
+2. checkAnagramUsingSorting [Traditional]
 Time Complexity: O(nlogn) (due to sorting)
 Space Complexity: O(1)
-Notes :
 Simpler but slower
 
-3. checkAnagramKotlinicWithGroupingToMap
+3. checkAnagramUsingGroupingToMap [Kotlin]
 Time Complexity: O(n)
 Space Complexity: O(1)
-Notes :
 Most readable
 
  ***********************************************************************************/
