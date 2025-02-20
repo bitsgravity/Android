@@ -1,13 +1,20 @@
 package com.bits.learn.program.trash
 
+import com.bits.learn.program.util.bottomDivider
+import com.bits.learn.program.util.gap
+import com.bits.learn.program.util.input
+import com.bits.learn.program.util.output
+import com.bits.learn.program.util.title
+import com.bits.learn.program.util.topDivider
+
 fun amstrongNumber(){
-    com.bits.learn.program.trash.title("AMSTRONG NUMBER")
+    title("AMSTRONG NUMBER")
     amstrongNumber(371)
-    com.bits.learn.program.trash.gap()
+    gap()
 }
 
 fun amstrongNumber(input : Int){
-    com.bits.learn.program.trash.input(input.toString())
+    input(input.toString())
 
     var number = input
     var reminder = 0
@@ -19,24 +26,24 @@ fun amstrongNumber(input : Int){
         number = number/10
     }
 
-    if (input == result) com.bits.learn.program.trash.output("$input is an amstrong number")
-    else com.bits.learn.program.trash.output("$input is not an amstrong number")
+    if (input == result) output("$input is an amstrong number")
+    else output("$input is not an amstrong number")
 }
 
 fun main(){
-    com.bits.learn.program.trash.topDivider()
+    topDivider()
     characterAndCount()
-    com.bits.learn.program.trash.bottomDivider()
+    bottomDivider()
 }
 
 fun characterAndCount() {
-    com.bits.learn.program.trash.title("CHARACTER AND COUNT")
+    title("CHARACTER AND COUNT")
     characterAndCount("Suneel Kumar e")
-    com.bits.learn.program.trash.gap()
+    gap()
 }
 
 fun characterAndCount(input: String) {
-    com.bits.learn.program.trash.input(input)
+    input(input)
 
     val map : HashMap<Char,Int> = HashMap()
 
@@ -48,7 +55,7 @@ fun characterAndCount(input: String) {
         }
     }
 
-    com.bits.learn.program.trash.output()
+    output()
 
     map.forEach {
         print("\n${it.key} - ${it.value}")
@@ -58,19 +65,19 @@ fun characterAndCount(input: String) {
 
 
 fun fibonacciSeries(){
-    com.bits.learn.program.trash.title("FIBONACCI SERIES")
+    title("FIBONACCI SERIES")
     fibonacciSeries(5)
-    com.bits.learn.program.trash.gap()
+    gap()
 }
 
 fun fibonacciSeries(limit: Int) {
-    com.bits.learn.program.trash.input(limit.toString())
+    input(limit.toString())
 
     var a = 0
     var b = 1
     var c = 1
 
-    com.bits.learn.program.trash.output("The fibonacci series upto $limit is ")
+    output("The fibonacci series upto $limit is ")
 
     var divider = ","
     for (i in 1..limit) {

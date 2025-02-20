@@ -1,26 +1,24 @@
 package com.bits.learn.program.content
 
-/*******************************
-Program to find substring index
- ********************************/
+ /***********************************************************************************
+                        Index of substring in a String
+ ***********************************************************************************/
 
-//fun main() {
-//    val input = "given"
-//    val givenString = "the given string" // Expected output: 4
-//    val output = findIndexOfSubstring(input, givenString)
-//    println("The matching index of \"$input\" in \"$givenString\" is $output")
-//}
+fun main() {
+    val input = "given"
+    val givenString = "the given string" // Expected output: 4
+    val output = findIndexOfSubstring(input, givenString)
+    println("The matching index of \"$input\" in \"$givenString\" is $output")
+}
 
 fun findIndexOfSubstring(input: String, givenString: String): Int {
-    val inputLength = input.length
-    val givenLength = givenString.length
 
-    for (i in 0..givenLength - inputLength) { // Loop till a valid substring can be checked
+    for (i in 0..givenString.length - input.length) { // Loop till a valid substring can be checked
         var j = 0
-        while (j < inputLength && givenString[i + j] == input[j]) {
+        while (j < input.length && givenString[i + j] == input[j]) {
             j++
         }
-        if (j == inputLength) {
+        if (j == input.length) {
             return i // If all characters matched, return starting index
         }
     }

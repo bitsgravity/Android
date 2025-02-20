@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                                Kotlin Play Ground
+                           First repeating element in an array
  ***********************************************************************************/
 
 fun main() {

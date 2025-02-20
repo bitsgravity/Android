@@ -1,10 +1,15 @@
 package com.bits.learn.program.content
 
-/*******************************
-Program to find
- ********************************/
+ /***********************************************************************************
+                        Separate digits from characters in a String
+ ***********************************************************************************/
 
-fun stringCorrection(input: String) {
+ fun main() {
+     val input = "Str1in3gsRe5su9lt"
+     separateDigitsFromString(input)
+ }
+
+fun separateDigitsFromString(input: String) {
     val output = StringBuilder()
     val numbers = arrayListOf<Int>()
 
@@ -23,11 +28,6 @@ fun stringCorrection(input: String) {
     println("The expected corrected string is $output")
 }
 
-//fun main() {
-//    val input = "Str1in3gsRe5su9lt"
-//    stringCorrection(input)
-//}
-
 /***********************************************
 
 Notes:
@@ -42,10 +42,8 @@ If numbers should always appear in sorted order, use .sorted() before appending 
 
 
 Output
-csharp
-Copy
-Edit
 The expected corrected string is StringsResult1359
+
 Time Complexity
 O(N log N) due to sorting, but can be optimized to O(N) if order doesn't matter.
 Let me know if you want any modifications! 🚀

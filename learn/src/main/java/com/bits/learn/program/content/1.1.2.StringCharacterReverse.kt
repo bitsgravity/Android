@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                                Kotlin Play Ground
+                            Reverse characters in a String
  ***********************************************************************************/
 
 fun main(){
@@ -35,7 +35,7 @@ fun reverseString3(input : String) : String { //Using Char array [Traditional]
     return String(output)
 }
 
-fun reverseString4(input : String) : String { //Using reversed() [Kotlin Specific]
+fun reverseString4(input : String) : String { //Using reversed() [Kotlin]
     return input.reversed()
 }
 

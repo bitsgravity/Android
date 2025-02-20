@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                                Kotlin Play Ground
+                First non-repeating character in a String (Dynamic)
  ***********************************************************************************/
 
 fun main(){
@@ -18,6 +18,8 @@ fun checkFirstNonRepeatingCharacterDynamic1(input : String) : Char? { //Using Li
             characterCountMap[char] = 1
         }
     }
+
+    //Iterate through the order preserved linked hash map to find the first non-repeating character
     for((char,count) in characterCountMap){
         if(count==1){
             return char

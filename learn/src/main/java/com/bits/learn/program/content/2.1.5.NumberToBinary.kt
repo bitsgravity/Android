@@ -1,12 +1,12 @@
 package com.bits.learn.program.content
 
-/*******************************
-Program to find
- ********************************/
+ /***********************************************************************************
+                            Decimal Number to Binary
+ ***********************************************************************************/
 
-//fun main() {
-//    convertToBinary(7) // Example input
-//}
+fun main() {
+    convertToBinary(7) // Example input
+}
 
 fun convertToBinary(input: Int) {
     var num = input
@@ -15,7 +15,7 @@ fun convertToBinary(input: Int) {
     while (num > 0) {
         val remainder = num % 2
         binaryArray.add(remainder) // Store remainder (binary bit)
-        num /= 2 // Reduce number by dividing by 2
+        num = num/2 // Reduce number by dividing by 2
     }
 
     // Binary representation is in reverse order, so we need to reverse it

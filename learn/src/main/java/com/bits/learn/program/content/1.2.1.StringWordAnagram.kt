@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                            Kotlin Play Ground
+                                String Anagram
  ***********************************************************************************/
 
 fun main() {
@@ -26,8 +26,9 @@ fun checkAnagram1(input1: String, input2: String): Boolean { //Using HashMap [Tr
     for (char in input2) { // Decrease count for input2
         if (!map.containsKey(char) || map[char] == 0) {
             return false
+        } else {
+            map[char] = map[char]!! - 1
         }
-        map[char] = map[char]!! - 1
     }
 
     return true

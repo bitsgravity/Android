@@ -1,7 +1,11 @@
 package com.bits.learn.program.content
 
+/***********************************************************************************
+                         Maximum occurring character in a String
+ ***********************************************************************************/
+
 fun main(){
-    maximumOccuringCharacter("Malayalam is a language !")
+    maximumOccuringCharacter("a")
 }
 
 fun maximumOccuringCharacter(input : String){
@@ -18,11 +22,18 @@ fun maximumOccuringCharacter(input : String){
             map[it] = 1
         }
 
-        if (map[it]!! > maxOccuringCharacterCount){
-            maxOccuringCharacterCount = map[it]!!
+        if(map[it]!! > maxOccuringCharacterCount){
             maxOccuringCharacter = it
+            maxOccuringCharacterCount = map[it]!!
         }
     }
 
     println("Maxmimum occuring character is $maxOccuringCharacter, which is recurring $maxOccuringCharacterCount times")
 }
+
+/***********************************************************************************
+Notes
+ ***********************************************************************************
+
+
+ ***********************************************************************************/

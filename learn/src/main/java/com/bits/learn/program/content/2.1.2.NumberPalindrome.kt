@@ -1,14 +1,20 @@
 package com.bits.learn.program.content
 
+import com.bits.learn.program.util.output
+
+ /***********************************************************************************
+                                Palindrome Number
+ ***********************************************************************************/
+
 fun main(){
     palindromeNumber(525)
 }
 
 fun palindromeNumber(number: Int){
     if (number == reverseNumber2(number)) {
-        com.bits.learn.program.trash.output("$number is a Palindrome Number")
+        output("$number is a Palindrome Number")
     } else {
-        com.bits.learn.program.trash.output("$number is not Palindrome Number")
+        output("$number is not Palindrome Number")
     }
 }
 
@@ -33,3 +39,15 @@ fun reverseNumber2(inputNumber: Int): Int {
 
     return reversedNumber
 }
+
+/***********************************************************************************
+Kotlin Play Ground
+ ***********************************************************************************/
+
+
+/***********************************************************************************
+Notes
+ ***********************************************************************************
+
+
+ ***********************************************************************************/

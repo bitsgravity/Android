@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                                Kotlin Play Ground
+                    First non-repeating character in a String (Static)
  ***********************************************************************************/
 
 fun main(){
@@ -18,6 +18,8 @@ fun checkFirstNonRepeatingCharacter1(input: String): Char? { //Using Character C
             map[char] = 1
         }
     }
+
+    //Iterate through the string again to find the first non-repeating character
     for(char in input){
         if(map[char] == 1)
             return char

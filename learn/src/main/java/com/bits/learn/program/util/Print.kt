@@ -1,4 +1,4 @@
-package com.bits.learn.program.trash
+package com.bits.learn.program.util
 
 fun title(title : String){
     val titleWrapLine = StringBuilder()
@@ -32,11 +32,11 @@ fun gap(){
 }
 
 fun topDivider(){
-    print(com.bits.learn.program.trash.Divider.DIVIDER_TOP)
+    print(Divider.DIVIDER_TOP)
 }
 
 fun bottomDivider(){
-    print(com.bits.learn.program.trash.Divider.DIVIDER_BOTTOM)
+    print(Divider.DIVIDER_BOTTOM)
 }
 
 object Divider {

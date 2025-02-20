@@ -1,8 +1,8 @@
 package com.bits.learn.program.content
 
-/*******************************
-Program to find
- ********************************/
+ /***********************************************************************************
+                            Index of a character in a String
+ ***********************************************************************************/
 
 fun main() {
     val input = "Nirmal@Android"
@@ -16,7 +16,7 @@ fun main() {
         }
     }
 
-    input.forEachIndexed { index, element ->
+    input.forEachIndexed { index, element -> //Another method to iterate through the string
         if (element == '@') {
             expectedIndex = index
         }
