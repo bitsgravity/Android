@@ -15,6 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Android"
 include ':app'
 include ':support'
-include ':puzzles'
-include ':theory'
-include ':program'
+include ':learn'

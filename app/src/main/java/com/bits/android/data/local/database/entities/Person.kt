@@ -2,7 +2,6 @@ package com.bits.android.data.local.database.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.bits.android.data.network.api.collection.persons.*
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "Persons")

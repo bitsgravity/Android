@@ -11,3 +11,7 @@ import javax.inject.Inject
 class AuthRepository @Inject constructor(private val api: Api, private val appPreference: AppPreference, private val appDatabase: AppDatabase) : NetworkCall() {
 
 }
+
+fun main(){
+
+}

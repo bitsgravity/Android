@@ -12,3 +12,8 @@ class AuthViewModel @Inject constructor(private val repository: AuthRepository) 
     var networkCallListener : NetworkCallListener? =null
 
 }
+
+
+fun main(){
+
+}

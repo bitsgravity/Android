@@ -3,8 +3,6 @@ package com.bits.android.data.network
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.os.Build
-import androidx.annotation.RequiresApi
 import java.io.IOException
 
 object Network{
