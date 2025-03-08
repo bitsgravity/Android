@@ -10,7 +10,7 @@ fun main(){
 
 fun amstrongNumber(input : Int){
     var number = input
-    var reminder = 0
+    var reminder : Int
     var result = 0
 
     while (number > 0){

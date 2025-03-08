@@ -9,13 +9,13 @@ fun main() {
 }
 
 fun convertToBinary(input: Int) {
-    var num = input
+    var number = input
     val binaryArray = ArrayList<Int>()
 
-    while (num > 0) {
-        val remainder = num % 2
+    while (number > 0) {
+        val remainder = number % 2
         binaryArray.add(remainder) // Store remainder (binary bit)
-        num = num/2 // Reduce number by dividing by 2
+        number = number/2 // Reduce number by dividing by 2
     }
 
     // Binary representation is in reverse order, so we need to reverse it

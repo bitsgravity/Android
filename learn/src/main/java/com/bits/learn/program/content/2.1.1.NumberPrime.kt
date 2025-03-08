@@ -1,7 +1,5 @@
 package com.bits.learn.program.content
 
-import kotlin.math.sqrt
-
  /***********************************************************************************
                                 Prime Number
  ***********************************************************************************/
@@ -11,7 +9,7 @@ fun main(){
 }
 
 fun primeNumber(number: Int) : Boolean {
-    val squareRoot = sqrt(number.toDouble())
+    val squareRoot = Math.sqrt(number.toDouble())
     for (i in 2 until squareRoot.toInt()+1){
         if (number%i == 0){
             return false

@@ -8,7 +8,7 @@ fun main() {
 
     val inputs = arrayOf(10, 5, 3, 4, 3, 5, 6)
 
-    val countMap = HashMap<Int,Int>()
+    val countMap = LinkedHashMap<Int,Int>() //Linked HashMap preserves order
 
     inputs.forEach{
         if(countMap.containsKey(it)){
@@ -26,16 +26,6 @@ fun main() {
     }
 
     println("The repeating number is ${repeatingNumber}")
-
-    //To find the indices of sum = 8
-
-    for ( i in 0..inputs.size){
-        for(j in 0..inputs.size){
-            if(inputs[i]+inputs[j]==8){
-
-            }
-        }
-    }
 
 }
 

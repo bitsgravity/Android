@@ -28,16 +28,17 @@ fun reverseNumber1(number : Int){
 
 fun reverseNumber2(inputNumber: Int): Int {
     var number = inputNumber
-    var reversedNumber = 0
     var remainder: Int
+    var result = 0
+
 
     while (number > 0) {
         remainder = number % 10
-        reversedNumber = reversedNumber * 10 + remainder
+        result = result * 10 + remainder
         number = number / 10
     }
 
-    return reversedNumber
+    return result
 }
 
 /***********************************************************************************
