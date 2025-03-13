@@ -1,4 +1,4 @@
-package com.bits.learn.program.trash
+package com.bits.learn.program.util
 //
 //import com.bitsgravity.program.collection.palindromeNumber
 //import com.bitsgravity.program.collection.primeNumber

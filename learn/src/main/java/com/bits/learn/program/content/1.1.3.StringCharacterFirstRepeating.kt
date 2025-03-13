@@ -11,10 +11,8 @@ fun main(){
 
 fun findFirstRepeatingCharacter(input : String) : Char? { //Using character set [Traditional]
     val characterSet = mutableSetOf<Char>()
-
     //Iterate through the string to find the first repeating character
     for(char in input){
-
         //Check if the character is already in the set
         if(characterSet.contains(char)){
             return char

@@ -1,4 +1,4 @@
-package com.bits.learn.program.latest
+package com.bits.learn.program.content
 
 /***********************************************************************************
                                 Kotlin Play Ground

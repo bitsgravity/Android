@@ -10,7 +10,7 @@ fun main(){
 }
 
 fun checkFirstNonRepeatingCharacter1(input: String): Char? { //Using Character Count Map [Traditional]
-    var map = HashMap<Char,Int>()
+    val map = HashMap<Char,Int>()
     for(char in input){
         if(map.containsKey(char)){
             map[char] = map[char]!! + 1

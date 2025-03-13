@@ -40,6 +40,7 @@ suspend fun updateBalance(transaction: String, amount: Int) {
                     println("Insufficient balance! Transaction failed.")
                 }
             }
+
             else -> println("Invalid transaction type.")
         }
     }

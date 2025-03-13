@@ -9,8 +9,7 @@ fun main(){
 }
 
 fun primeNumber(number: Int) : Boolean {
-    val squareRoot = Math.sqrt(number.toDouble())
-    for (i in 2 until squareRoot.toInt()+1){
+    for (i in 2 until Math.sqrt(number.toDouble()).toInt()+1){
         if (number%i == 0){
             return false
         }

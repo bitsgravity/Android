@@ -1,7 +1,7 @@
 package com.bits.learn.program.content
 
 /***********************************************************************************
-                            Common characters in Strings
+                            Common characters in given String array
  ***********************************************************************************/
 
 fun main() {

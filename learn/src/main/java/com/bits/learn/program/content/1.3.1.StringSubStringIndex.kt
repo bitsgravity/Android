@@ -11,22 +11,22 @@ fun main() {
     println("The matching index of \"$input\" in \"$givenString\" is $output")
 }
 
-fun findIndexOfSubstring(input: String, givenString: String): Int {
+fun findIndexOfSubstring(subString: String, fullString: String): Int {
 
-    for (i in 0..givenString.length - input.length) { // Loop till a valid substring can be checked
+    for (i in 0..fullString.length - subString.length) { // Loop till a valid substring can be checked
         var j = 0
-        while (j < input.length && givenString[i + j] == input[j]) {
+        while (j < subString.length && subString[j] == fullString[i + j]) {
             j++
         }
-        if (j == input.length) {
+        if (j == subString.length) {
             return i // If all characters matched, return starting index
         }
     }
     return -1 // Not found
 }
 
-fun findIndexOfSubstringKotlinic(input: String, givenString: String): Int {
-    return givenString.indexOf(input) // `indexOf()` finds the first occurrence of a substring
+fun findIndexOfSubstringKotlinic(subString: String, fullString: String): Int {
+    return fullString.indexOf(subString) // `indexOf()` finds the first occurrence of a substring
 }
 
 /***********************************************

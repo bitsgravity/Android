@@ -1,11 +1,4 @@
-package com.bits.learn.program.trash
-
-import com.bits.learn.program.util.bottomDivider
-import com.bits.learn.program.util.gap
-import com.bits.learn.program.util.input
-import com.bits.learn.program.util.output
-import com.bits.learn.program.util.title
-import com.bits.learn.program.util.topDivider
+package com.bits.learn.program.util
 
 fun amstrongNumber(){
     title("AMSTRONG NUMBER")
