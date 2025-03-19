@@ -22,7 +22,7 @@ fun reArrangeNumbers(numbers: Array<Int>): Array<Int> {
             i++ //Increment i (Left pointer)
         } else { //Odd number
 
-            if (j % 2 == 0) {//Odd number (Right place)
+            if (j % 2 == 0) {//Odd number (Right place) [Doubt here] //Cross check please
                 j-- //Decrement j (Right pointer)
             } else { //Swap required
                 val temp = numbers[i]

@@ -19,10 +19,7 @@ fun findCommonCharacter(inputs : ArrayList<String>) {
         val iterator = expectedCharacters.iterator()
         while(iterator.hasNext()){
             val char = iterator.next()
-            if(inputs[i].contains(char)){
-                println("$char")
-            } else {
-                println("$char Removed")
+            if(!inputs[i].contains(char)){
                 iterator.remove()
             }
         }
